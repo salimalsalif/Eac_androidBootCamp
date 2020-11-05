@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/entrance"
+    tools:context=".RegistrationPage">
+
+    <EditText
+        android:id="@+id/editTextStreet"
+        android:layout_width="0dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:ems="10"
+        android:textColor="#E6E4EA"
+        android:textColorHint="#E6E4EA"
+        android:hint="Enter street address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextVillage" />
+
+    <EditText
+        android:id="@+id/editTextVillage"
+        android:layout_width="0dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginRight="38dp"
+        android:ems="10"
+        android:textColor="#E6E4EA"
+        android:textColorHint="#E6E4EA"
+        android:hint="Village"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCity" />
+
+    <EditText
+        android:id="@+id/editTextTemp"
+        android:layout_width="0dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:ems="10"
+        android:textColorHint="#E6E4EA"
+        android:hint="Enter temperature"
+        android:textColor="#E6E4EA"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextStreet" />
+
+    <Button
+        android:id="@+id/buttonPermit"
+        android:layout_width="186dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginBottom="16dp"
+        android:text="Get Permission"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTemp"
+        app:layout_constraintVertical_bias="0.423" />
+
+    <EditText
+        android:id="@+id/editTextCity"
+        android:layout_width="0dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginRight="38dp"
+        android:textColorHint="#E6E4EA"
+        android:textColor="#E6E4EA"
+        android:ems="10"
+        android:hint="City"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginRight="39dp"
+        android:textColorHint="#E6E4EA"
+        android:textColor="#E6E4EA"
+        android:hint="Enter your Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
